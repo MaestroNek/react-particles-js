@@ -61,7 +61,7 @@ export default class Particles extends Component<
 	}
 
 	loadCanvas(canvas: HTMLCanvasElement) {
-		if (canvas) {
+		if (canvas && !this.state.canvas) {
 			this.setState(
 				{
 					canvas
